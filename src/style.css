@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #525252;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  height: 52px;
+  background-color: #525252;
+}
+
+section {
+  height: 88%;
+}
+
+.content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 22%;
+  height: 52px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #ededed;
+}
+
+.menu {
+  padding-right: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 52px;
+}
+
+.menu p {
+  padding-right: 11px;
+  padding-left: 11px;
+}
+
+.menu img {
+  height: 15px;
+  width: 16px;
+}
+
+.titleBox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 104px;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #2e2e2e;
+}
+
+.searchMainBox {
+  height: 52px;
+  background-color: #ededed;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.searchArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 11px;
+  height: 30px;
+  width: 252px;
+  color: #767676;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #e6332a;
+}
+
+.search {
+  padding-left: 11px;
+  height: 28px;
+  width: 250px;
+  color: #767676;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: none;
+}
+
+.searcher {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5px;
+}
+
+input {
+  border: none;
+}
+
+.searchIcon {
+  height: 20px;
+  width: 12px;
+}
+
+.plusTag {
+  margin-left: -6px;
+  color: #767676;
+}
+
+.tagBox {
+  box-sizing: content-box;
+  height: 60vh;
+  width: 55%;
+  padding-top: 45px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.eng {
+  box-sizing: border-box;
+  height: 40%;
+  width: 50%;
+  max-height: fit-content;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.rus {
+  box-sizing: border-box;
+  height: 40%;
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.alphabet {
+  padding-left: 30px;
+  height: min-content;
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.alphabet > * {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#c::before {
+  content: 'c';
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  color: #e6332a;
+}
+
+#h::before {
+  content: 'h';
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  color: #e6332a;
+}
+
+#k::before {
+  content: 'k';
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  color: #e6332a;
+}
+
+#l::before {
+  content: 'l';
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  color: #e6332a;
+}
+
+#s::before {
+  content: 's';
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  color: #e6332a;
+}
+
+#x::before {
+  content: 'x';
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  color: #e6332a;
+}
+
+.listSection {
+  position: relative;
+  height: min-content;
+  width: min-content;
+  max-width: 200px;
+  padding: 5px;
+  text-overflow: ellipsis;
+}
+
+.listSection:hover {
+  max-width: min-content;
+  background: #c4c4c4;
+  color: #ffffff;
+  border-radius: 3px;
+  overflow: visible;
+  position: relative;
+}
+
+.deleteTag {
+  display: none;
+  box-sizing: content-box;
+  height: 2px;
+  width: 6px;
+  background-color: #ffffff;
+  border: #e6332a solid;
+  border-width: 4px 2px 4px 2px;
+  border-radius: 10px;
+  position: absolute;
+  right: -4px;
+  top: -5px;
+}
+
+.listSection:hover .deleteTag {
+  display: block;
+}
+
+.hiddenTag {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 69px;
+  width: 100%;
+  background-color: #525252;
+}

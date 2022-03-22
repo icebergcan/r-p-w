@@ -2,6 +2,7 @@ import './style.css'
 import searchIcon from './assets/icons/searchIcon.png'
 import Tag from './tag'
 import Search from './search';
+import completeTag from './tagList'
 
 function App() {
   return (
@@ -25,9 +26,6 @@ function App() {
           <div class="searchBox content">
               <Search />
               <Search />
-              {/* <div class="searchArea">
-
-              </div> */}
               <div class="plusTag">
                 + добавить тег
               </div>
@@ -39,16 +37,7 @@ function App() {
           <div class="eng">
           <div class="alphabet">
 
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
+                    <completeTag/>
 
                 </div>
           </div>      

@@ -1,20 +1,15 @@
 import React from "react";
 import searchIcon from './assets/icons/searchIcon.png'
-import InputTag from "./input";
+import "./style.css"
 
-const defaultText = 'найти тег';
-
-function Search (Text) {
-    return (
-        <div class="searchArea">
-                  {/* {defaultText} */}
-                  <InputTag/>
-              </div>
-    )
+function Search () {
+  return (
+    <div className="searchArea">
+      <div className="searcher">
+          <input type="text" className="search" placeholder="найти тег"/>
+        <input type='image' src={searchIcon} className="searchIcon" />
+      </div>
+    </div>
+  );
 }
-
-
-
-Search(defaultText);
-
-export default Search;
+  export default Search;

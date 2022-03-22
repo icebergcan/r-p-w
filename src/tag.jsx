@@ -1,8 +1,9 @@
 import React from "react";
 
 function Tag () {
+    
     return (
-        <div class="listSection">test_text
+        <div class="listSection">fgf
             <input type="button" className="deleteTag"/>
         </div>
     )

@@ -1,29 +1,36 @@
-import Tag from ".src/tag"
+import TagList from "./test_base"
 
-let tag = [11, 21, 31, 41, 51];
+const tag = [
+    'CAT',
+    'Chengong',
+    'Heli',
+    'Hitiac',
+    'Komatsu',
+    'Livgong',
+    'Shantui',
+    'Shaanxi',
+    'Xyma',
+    'XCcling',
+    'Амкадор',
+    'АТЗ',
+    'ВТТЗ',
+    'ДОН',
+    'ЛТЗ',
+    'МТЗ',
+    'ПТЗ',
+    'Четра',
+    'ЦТЗ'
+];
 
-let splArr = tag.join(', ');
 
-function writeFirstLetter () {
-for (let i = 0; i < tag.length; i++) {
-    tag.charAt(i)
-}
-return tag.charAt(i)
-}
+const letterArr = tag.map(item => item.charAt(0));
 
-const alph = []
-
-alph.push(writeFirstLetter())
+const sortedLetters = letterArr.slice();
+sortedLetters.sort()
 
 
+const alphabetList = [...new Set(sortedLetters)]
 
-console.log (letter(splArr));
+// export default alphabetList
 
 
-
-let names = 'Вася, Петя, Маша';
-
-let arr = names.split(', ');
-
-for (let name of arr) {
-  console.log( `Сообщение получат: ${name}.` );}

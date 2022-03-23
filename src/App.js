@@ -2,7 +2,7 @@ import './style.css'
 import searchIcon from './assets/icons/searchIcon.png'
 import Tag from './tag'
 import Search from './search';
-import completeTag from './tagList'
+import TagList from './tagList'
 
 function App() {
   return (
@@ -33,30 +33,9 @@ function App() {
       </div>
 
       <div class="tagBox content">
-
-          <div class="eng">
-          <div class="alphabet">
-
-                    <completeTag/>
-
-                </div>
-          </div>      
-          <div class="rus">
-                <div class="alphabet">
-
-                    <div class="listSection" id="c">CAT</div>
-                    <div class="listSection">Chengong</div>
-                    <div class="listSection" id="h">Heli</div>
-                    <div class="listSection">Hitiac</div>
-                    <div class="listSection" id="k">Komatsu</div>
-                    <div class="listSection" id="l">Livgong</div>
-                    <div class="listSection" id="s">Shantui</div>
-                    <div class="listSection">Shaanxi</div>
-                    <div class="listSection" id="x">Xyma</div>
-                    <div class="listSection" >XCcling</div>
-                    
-                </div>
-          </div>
+        <div class="alphabet">
+          <TagList/>      
+        </div>
     </div>      
   </section>
     <footer></footer>

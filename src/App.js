@@ -34,7 +34,7 @@ function App() {
 
       <div class="tagBox content">
         <div class="alphabet">
-          <TagList/>      
+          <TagList/>  
         </div>
     </div>      
   </section>

@@ -133,79 +133,36 @@ input {
 
 .tagBox {
   box-sizing: content-box;
-  height: 60vh;
-  max-height: none;
-  width: 66%;
+  height: auto;
+  width: 56%;
   padding-top: 45px;
-  justify-content: space-between;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: 100%;
 }
 
 .alphabet {
+  top: 0;
   padding-left: 30px;
-  height: 65%;
+  /* height: 65%; */
   max-height: none;
-  width: 55%;
-  position: absolute;
-  display: flex;
+  /* position: absolute; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: (4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-flow: column;
+
+  /* display: flex;
   justify-content: start;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: stretch;
-  overflow-wrap: break-word;
+  overflow-wrap: break-word; */
 }
 
 .alphabet > * {
   font-size: 24px;
   font-weight: 700;
-}
-
-#c::before {
-  content: 'c';
-  position: absolute;
-  left: -30px;
-  top: 5px;
-  color: #e6332a;
-}
-
-#h::before {
-  content: 'h';
-  position: absolute;
-  left: -30px;
-  top: 5px;
-  color: #e6332a;
-}
-
-#k::before {
-  content: 'k';
-  position: absolute;
-  left: -30px;
-  top: 5px;
-  color: #e6332a;
-}
-
-#l::before {
-  content: 'l';
-  position: absolute;
-  left: -30px;
-  top: 5px;
-  color: #e6332a;
-}
-
-#s::before {
-  content: 's';
-  position: absolute;
-  left: -30px;
-  top: 5px;
-  color: #e6332a;
-}
-
-#x::before {
-  content: 'x';
-  position: absolute;
-  left: -30px;
-  top: 5px;
-  color: #e6332a;
 }
 
 .letter {
@@ -217,12 +174,8 @@ input {
   top: 0;
 }
 
-.letter:hover {
-  background: none;
-  border: none;
-}
-
 .listSection {
+  margin-right: 30px;
   position: relative;
   height: min-content;
   width: min-content;

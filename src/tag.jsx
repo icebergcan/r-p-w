@@ -1,12 +1,12 @@
 import React from "react";
 
-function Tag (section, letter) {
+function Tag ({section, letter}) {
     
     return (
-        <div class="listSection">{section.nameSect}
+        <div class="listSection">{section}
             <input type="button" className="deleteTag"/>
             <div className="letter">
-                {letter.nameLett}
+                {letter}
             </div>
         </div>
     )

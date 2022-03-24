@@ -211,8 +211,15 @@ input {
 .letter {
   color: #e6332a;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  max-width: 200px;
+  padding: 5px;
+  left: -30px;
+  top: 0;
+}
+
+.letter:hover {
+  background: none;
+  border: none;
 }
 
 .listSection {

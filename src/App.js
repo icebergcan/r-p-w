@@ -1,18 +1,20 @@
 import './style.css'
-import searchIcon from './assets/icons/searchIcon.png'
-import Tag from './tag'
 import Search from './search';
 import TagList from './tagList'
+import {SearchResult, SearchResultCount} from './searchResult';
+
 
 function App() {
 
-  let sectionCount = '1fr 1fr'
 
-  let alphabetStyle = {
-    gridAutoFlow: 'column',
-    gridTemplateRows: sectionCount
-  };
+  let pageContent
 
+  function fillPage () {if (SearchResultCount > 0) {pageContent = <SearchResult/> 
+} else {pageContent = <TagList/>}}
+
+  fillPage()
+
+console.log(pageContent)
   return (
 <>
     <header></header>
@@ -41,8 +43,8 @@ function App() {
       </div>
 
       <div class="tagBox content">
-        <div className="alphabet" style={alphabetStyle}>
-          <TagList/>  
+        <div className="alphabet" /* style={alphabetStyle} */>
+          {pageContent}
         </div>
     </div>      
   </section>
@@ -50,5 +52,4 @@ function App() {
 </>
   );
 }
-
 export default App;

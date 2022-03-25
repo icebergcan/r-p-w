@@ -1,6 +1,5 @@
 import React from "react";
 import Tag from "./tag";
-import Style from"./style.css"
 
 const rows =[
     {
@@ -905,29 +904,31 @@ const rows =[
 //   },
 ]
 
+// let element = document.getElementsByClassName('alphabet');
+// // element.style.gridTemplateRows = 'repeat(10, 1fr)'
+
+// let elem = element[0]
+
+
 
 function TagList () {
     let firtstLetter = ''
 
-    return (
-        <>
-            {rows.map(row => {
-                if (firtstLetter !== row.name_ru.charAt(0)) {
-                    firtstLetter = row.name_ru.charAt(0)
-                    return <Tag key={row.id} section={row.name_ru} letter={firtstLetter.toLowerCase()}/>
-                } else {
-                    return <Tag key={row.id} section={row.name_ru}/>
-                }
 
-            })}
+
+    return (
+      <>
+        {rows.map(row => {
+          if (firtstLetter !== row.name_ru.charAt(0)) {
+            firtstLetter = row.name_ru.charAt(0)
+              return <Tag key={row.id} section={row.name_ru} letter={firtstLetter.toLowerCase()}/>
+          } else {
+              return <Tag key={row.id} section={row.name_ru}/>
+          }
+        })}
             
-        </>
+      </>
     );
 }
 
-
-
-
-
 export default TagList;
-

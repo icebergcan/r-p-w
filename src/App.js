@@ -5,6 +5,14 @@ import Search from './search';
 import TagList from './tagList'
 
 function App() {
+
+  let sectionCount = '1fr 1fr'
+
+  let alphabetStyle = {
+    gridAutoFlow: 'column',
+    gridTemplateRows: sectionCount
+  };
+
   return (
 <>
     <header></header>
@@ -33,7 +41,7 @@ function App() {
       </div>
 
       <div class="tagBox content">
-        <div class="alphabet">
+        <div className="alphabet" style={alphabetStyle}>
           <TagList/>  
         </div>
     </div>      

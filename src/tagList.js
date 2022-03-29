@@ -185,13 +185,13 @@ const rows =[
 ];
 
 function TagList () {
-    let firtstLetter = ''
+    let firstLetter = ''
     return (
       <>
         {rows.map(row => {
-          if (firtstLetter !== row.name_ru.charAt(0)) {
-            firtstLetter = row.name_ru.charAt(0)
-              return <Tag key={row.id} section={row.name_ru} letter={firtstLetter.toLowerCase()}/>
+          if (firstLetter !== row.name_ru.charAt(0)) {
+            firstLetter = row.name_ru.charAt(0)
+              return <Tag key={row.id} section={row.name_ru} letter={firstLetter.toLowerCase()}/>
           } else {
               return <Tag key={row.id} section={row.name_ru}/>
           }

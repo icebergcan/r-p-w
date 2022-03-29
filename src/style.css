@@ -8,11 +8,6 @@
   text-decoration: none;
 }
 
-body {
-  width: 100%;
-  max-height: none;
-}
-
 header {
   height: 52px;
   background-color: #525252;
@@ -24,10 +19,11 @@ section {
 }
 
 .content {
+  padding-left: 22%;
+  width: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
-  padding-left: 22%;
 }
 
 .navigation {
@@ -56,51 +52,42 @@ section {
   width: 16px;
 }
 
-.titleBox {
-  display: flex;
-  justify-content: start;
+.title {
   align-items: center;
   height: 104px;
-}
-
-.title {
   font-size: 38px;
   font-weight: 700;
   color: #2e2e2e;
 }
 
-.searchMainBox {
+.searchBox {
+  width: 100%;
   height: 52px;
   background-color: #ededed;
   display: flex;
-  align-content: center;
-}
-
-.searchBox {
-  display: flex;
   justify-content: start;
+  align-items: center;
 }
 
 .searchArea {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 11px;
-  height: 30px;
+  padding-right: 7px;
+  padding-left: 11px;
+  margin-right: 18px;
   width: 252px;
-  color: #767676;
-  background-color: #ffffff;
+  height: 28px;
+  background-color: #FFFFFF;
   border-radius: 3px;
-  border: solid 1px #e6332a;
+  border: #E6332A 1px solid;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
 }
 
 .search {
-  padding-left: 11px;
-  height: 28px;
-  width: 233px;
+  background-color: inherit;
+  width: 100%;
   color: #767676;
-  background-color: #ffffff;
-  border-radius: 3px;
   outline: none;
   font-size: 16px;
 }
@@ -109,26 +96,24 @@ input::placeholder {
   font-size: 16px;
 }
 
-.searcher {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 5px;
-}
-
 input {
   border: none;
 }
 
-.searchIcon {
-  height: 20px;
-  width: 12px;
+.searchButton {
+  background-image: url(assets/icons/searchIcon.png);
+  background-color: initial;
+  height: 19px;
+  width: 13px;
+  cursor: pointer;
 }
 
-.plusTag {
-  margin-left: -6px;
+.plusTagButton {
+  font-size: 16px;
+  margin-left: -12px;
   color: #767676;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 .tagBox {
@@ -174,6 +159,7 @@ input {
   max-width: 200px;
   padding: 5px;
   text-overflow: ellipsis;
+  cursor: default;
 }
 
 .listSection:hover {
@@ -197,12 +183,9 @@ input {
   position: absolute;
   right: -4px;
   top: -5px;
+  cursor: pointer;
 }
 
 .listSection:hover .deleteTag {
   display: block;
-}
-
-.hiddenTag {
-  display: none;
 }

@@ -56,17 +56,11 @@ section {
   width: 16px;
 }
 
-.titleBox {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  height: 104px;
-}
-
 .title {
   font-size: 38px;
   font-weight: 700;
   color: #2e2e2e;
+  height: 104px;
 }
 
 .searchMainBox {
@@ -77,21 +71,22 @@ section {
 }
 
 .searchBox {
-  display: flex;
-  justify-content: start;
+  height: 52px;
+  background-color: #ededed;
+  align-content: center;
 }
 
 .searchArea {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 11px;
+  margin-right: 18px;
   height: 30px;
   width: 252px;
   color: #767676;
   background-color: #ffffff;
   border-radius: 3px;
   border: solid 1px #e6332a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search {
@@ -109,25 +104,21 @@ input::placeholder {
   font-size: 16px;
 }
 
-.searcher {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 5px;
-}
-
 input {
   border: none;
 }
 
-.searchIcon {
-  height: 20px;
-  width: 12px;
+.searchButton {
+  box-sizing: content-box;
+  padding-right: 7px;
+  height: 19px;
+  width: 11px;
 }
 
-.plusTag {
-  margin-left: -6px;
+.plusTagButton {
+  margin-left: -12px;
+  font: inherit;
+  background-color: inherit;
   color: #767676;
 }
 
@@ -145,11 +136,6 @@ input {
   width: 100%;
   column-count: 4;
   column-fill: balance;
-
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-auto-flow: column; */
 }
 
 .alphabet > * {
@@ -174,6 +160,7 @@ input {
   max-width: 200px;
   padding: 5px;
   text-overflow: ellipsis;
+  cursor: default;
 }
 
 .listSection:hover {
@@ -197,12 +184,9 @@ input {
   position: absolute;
   right: -4px;
   top: -5px;
+  cursor: pointer;
 }
 
 .listSection:hover .deleteTag {
   display: block;
-}
-
-.hiddenTag {
-  display: none;
 }

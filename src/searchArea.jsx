@@ -10,18 +10,22 @@ function SearchArea  () {
     <>
         <div className="searchArea">
             <Search
+                inputClass="search"
                 placeholder="найти тег"
                 buttonClass="searchButton"
                 buttonSrc={searchIcon}
             />
         </div>
         <div className="searchArea">
-            <Search />
+            <Search 
+                inputType="text"
+                inputClass="search"
+            />
         </div>
-        <input
-            type="button"
-            className="plusTagButton"
-            value="+ добавить тег"
+        <Search 
+            inputType="button"
+            buttonClass="plusTagButton"
+            buttonValue="+ добавить тег"
         />
     </>
     );

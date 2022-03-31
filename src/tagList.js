@@ -189,8 +189,8 @@ function TagList () {
     return (
       <>
         {rows.map(row => {
-          if (firstLetter !== row.name_ru.charAt(0)) {
-            firstLetter = row.name_ru.charAt(0)
+          if (firstLetter !== row.name_ru[0]) {
+            firstLetter = row.name_ru[0]
               return <Tag key={row.id} section={row.name_ru} letter={firstLetter.toLowerCase()}/>
           } else {
               return <Tag key={row.id} section={row.name_ru}/>

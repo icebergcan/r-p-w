@@ -13,37 +13,26 @@ function SearchArea  () {
             <div className="searchBox content">
                 <div className="searchArea">
                     <Search
-                            inputClass="search"
-                            placeholder="найти тег"
-                            buttonClass="searchButton"
-                            buttonSrc={searchIcon}
-                    />
-                </div>  
-            </div>
-        </div>
-        
-        <div className="searchBackground">
-            <div className="searchBox content">
+                        inputClass="search"
+                        placeholder="найти тег"
+                        buttonClass="searchButton"
+                        buttonSrc={searchIcon}
+                     />
+                </div>
                 <div className="searchArea">
-                    <Search
-                            inputType="text"
-                            inputClass="search"
+                    <Search 
+                        inputType="text"
+                        inputClass="search"
                     />
-                </div>  
+                </div>
+                    <Search 
+                        inputType="button"
+                        buttonClass="plusTagButton"
+                        buttonValue="+ добавить тег"
+                    />
             </div>
         </div>
-        
-        <div className="searchBackground">
-            <div className="searchBox content">
-                <div className="searchArea">
-                    <Search
-                            inputType="button"
-                            buttonClass="plusTagButton"
-                            buttonValue="+ добавить тег"
-                    />
-                </div>  
-            </div>
-        </div>
+       
     </>
     );
 }

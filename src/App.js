@@ -3,7 +3,7 @@ import SearchArea from './searchArea';
 import TagList from './tagList'
 import React from "react";
 
-export const App = () => {
+export const App = () => (
 
 <>
     <header></header>
@@ -31,6 +31,6 @@ export const App = () => {
   </section>
 </>
 
-};
+);
 
 

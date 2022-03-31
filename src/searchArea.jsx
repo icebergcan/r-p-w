@@ -8,25 +8,42 @@ function SearchArea  () {
 
     return (
     <>
-        <div className="searchArea">
-            <Search
-                inputClass="search"
-                placeholder="найти тег"
-                buttonClass="searchButton"
-                buttonSrc={searchIcon}
-            />
+
+        <div className="searchBackground">
+            <div className="searchBox content">
+                <div className="searchArea">
+                    <Search
+                            inputClass="search"
+                            placeholder="найти тег"
+                            buttonClass="searchButton"
+                            buttonSrc={searchIcon}
+                    />
+                </div>  
+            </div>
         </div>
-        <div className="searchArea">
-            <Search 
-                inputType="text"
-                inputClass="search"
-            />
+        
+        <div className="searchBackground">
+            <div className="searchBox content">
+                <div className="searchArea">
+                    <Search
+                            inputType="text"
+                            inputClass="search"
+                    />
+                </div>  
+            </div>
         </div>
-        <Search 
-            inputType="button"
-            buttonClass="plusTagButton"
-            buttonValue="+ добавить тег"
-        />
+        
+        <div className="searchBackground">
+            <div className="searchBox content">
+                <div className="searchArea">
+                    <Search
+                            inputType="button"
+                            buttonClass="plusTagButton"
+                            buttonValue="+ добавить тег"
+                    />
+                </div>  
+            </div>
+        </div>
     </>
     );
 }

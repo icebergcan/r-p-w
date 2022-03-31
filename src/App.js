@@ -3,11 +3,8 @@ import SearchArea from './searchArea';
 import TagList from './tagList'
 import React from "react";
 
+export const App = () => {
 
-
-function App() {
-
-  return (
 <>
     <header></header>
     <section>
@@ -24,9 +21,7 @@ function App() {
 
       <div className="content title">Редактировать теги</div>
 
-      <div className="searchBox content">
-          <SearchArea />
-      </div>
+      <SearchArea />
 
       <div className="tagBox content">
         <div className="alphabet" /* style={alphabetStyle} */>
@@ -35,6 +30,7 @@ function App() {
     </div>      
   </section>
 </>
-  );
-}
-export default App;
+
+};
+
+

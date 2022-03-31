@@ -12,7 +12,7 @@ function Search ({
   return (
       <>
           <input type={inputType} className={inputClass} placeholder={placeholder} />
-          <input type="image" src={buttonSrc} className={buttonClass} value={buttonValue} onClick="console.log(1)"/>
+          <input type="image" src={buttonSrc} className={buttonClass} value={buttonValue} onClick={() => {console.log(1)}}/>
       </>
   );
 }

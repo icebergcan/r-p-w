@@ -8,11 +8,6 @@
   text-decoration: none;
 }
 
-body {
-  width: 100%;
-  max-height: none;
-}
-
 header {
   height: 52px;
   background-color: #525252;
@@ -24,16 +19,15 @@ section {
 }
 
 .content {
+  margin: 0 auto;
+  width: 920px;
   display: flex;
   justify-content: start;
   align-items: center;
-  padding-left: 22%;
+  /*   padding: 0 22%; */
 }
 
 .navigation {
-  display: flex;
-  justify-content: start;
-  align-items: center;
   background-color: #ededed;
 }
 
@@ -63,7 +57,7 @@ section {
   height: 104px;
 }
 
-.searchMainBox {
+.searchBackground {
   height: 52px;
   background-color: #ededed;
   display: flex;
@@ -71,8 +65,6 @@ section {
 }
 
 .searchBox {
-  height: 52px;
-  background-color: #ededed;
   align-content: center;
 }
 
@@ -125,7 +117,6 @@ input {
 .tagBox {
   box-sizing: content-box;
   height: auto;
-  width: 56%;
   padding-top: 45px;
 }
 
@@ -152,6 +143,10 @@ input {
   top: 0;
 }
 
+.letter:hover {
+  display: none;
+}
+
 .listSection {
   margin-right: 30px;
   position: relative;
@@ -159,7 +154,6 @@ input {
   width: min-content;
   max-width: 200px;
   padding: 5px;
-  text-overflow: ellipsis;
   cursor: default;
 }
 
@@ -189,4 +183,5 @@ input {
 
 .listSection:hover .deleteTag {
   display: block;
+  overflow: visible;
 }

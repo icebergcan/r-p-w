@@ -70,6 +70,7 @@ section {
 
 .searchArea {
   margin-right: 18px;
+  padding: 0 11px;
   height: 30px;
   width: 252px;
   color: #767676;
@@ -82,9 +83,8 @@ section {
 }
 
 .search {
-  padding-left: 11px;
   height: 28px;
-  width: 233px;
+  width: 90%;
   color: #767676;
   background-color: #ffffff;
   border-radius: 3px;
@@ -102,7 +102,7 @@ input {
 
 .searchButton {
   box-sizing: content-box;
-  margin-right: 7px;
+  margin-right: -4px;
   height: 20px;
   width: 12px;
   background-image: url(/src/assets/icons/searchIcon.svg);
@@ -116,6 +116,7 @@ input {
   font: inherit;
   background-color: inherit;
   color: #767676;
+  cursor: pointer;
 }
 
 .tagBox {

@@ -8,11 +8,6 @@
   text-decoration: none;
 }
 
-body {
-  width: 100%;
-  max-height: none;
-}
-
 header {
   height: 52px;
   background-color: #525252;
@@ -24,16 +19,15 @@ section {
 }
 
 .content {
+  margin: 0 auto;
+  width: 56%;
   display: flex;
   justify-content: start;
   align-items: center;
-  padding-left: 22%;
+  /*   padding: 0 22%; */
 }
 
 .navigation {
-  display: flex;
-  justify-content: start;
-  align-items: center;
   background-color: #ededed;
 }
 
@@ -63,7 +57,7 @@ section {
   height: 104px;
 }
 
-.searchMainBox {
+.searchBackground {
   height: 52px;
   background-color: #ededed;
   display: flex;
@@ -71,8 +65,6 @@ section {
 }
 
 .searchBox {
-  height: 52px;
-  background-color: #ededed;
   align-content: center;
 }
 
@@ -110,9 +102,13 @@ input {
 
 .searchButton {
   box-sizing: content-box;
-  padding-right: 7px;
-  height: 19px;
-  width: 11px;
+  margin-right: 7px;
+  height: 20px;
+  width: 12px;
+  background-image: url(/src/assets/icons/searchIcon.svg);
+  background-color: #ffffff;
+  flex-shrink: 0;
+  cursor: pointer;
 }
 
 .plusTagButton {
@@ -124,18 +120,16 @@ input {
 
 .tagBox {
   box-sizing: content-box;
-  height: auto;
-  width: 56%;
-  padding-top: 45px;
+  margin-top: 45px;
+  height: max-content;
 }
 
 .alphabet {
-  top: 0;
   padding-left: 30px;
-  max-height: none;
   width: 100%;
-  column-count: 4;
-  column-fill: balance;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: column;
 }
 
 .alphabet > * {
@@ -157,14 +151,11 @@ input {
 }
 
 .listSection {
-  margin-right: 30px;
   position: relative;
-  height: min-content;
-  width: min-content;
-  max-width: 200px;
   padding: 5px;
-  text-overflow: ellipsis;
+  width: min-content;
   cursor: default;
+  overflow: visible;
 }
 
 .listSection:hover {
@@ -189,6 +180,8 @@ input {
   right: -4px;
   top: -5px;
   cursor: pointer;
+
+  break-inside: avoid;
 }
 
 .listSection:hover .deleteTag {

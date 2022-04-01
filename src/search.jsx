@@ -11,8 +11,15 @@ function Search ({
 {
   return (
       <>
-          <input type={inputType} className={inputClass} placeholder={placeholder} />
-          <input type="image" src={buttonSrc} className={buttonClass} value={buttonValue} onClick="console.log(1)"/>
+          <input id="fleaSearch" type={inputType} className={inputClass} placeholder={placeholder} />
+          <input 
+            type="button" 
+            src={buttonSrc} 
+            className={buttonClass} 
+            value={buttonValue} 
+            onClick={() => {
+              console.log(document.getElementById("fleaSearch").value)
+            }}/>
       </>
   );
 }

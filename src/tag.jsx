@@ -4,9 +4,7 @@ function Tag ({section, letter}) {
     
     return (
         <div className="listSection">
-            <div className="letter">
-                {letter}
-            </div>
+            {letter}
             {section}
             <input type="button" className="deleteTag"/>
         </div>

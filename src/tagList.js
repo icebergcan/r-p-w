@@ -182,22 +182,44 @@ const rows =[
     updatedAt: '2022-03-17T08:20:25.132Z',
     deletedAt: null
   },
+  
 ];
 
+
+
 function TagList () {
+
+  let alphabetStyle = {
+    gridTemplateRows: ""
+  }
+  
+  for (let i = 0; i < rows.length/4; i++) {
+    alphabetStyle.gridTemplateRows += " 1fr"
+  };
+
     let firstLetter = ''
     return (
-      <>
+      <div className="alphabet" style={alphabetStyle}>
         {rows.map(row => {
           if (firstLetter !== row.name_ru[0]) {
             firstLetter = row.name_ru[0]
-              return <Tag key={row.id} section={row.name_ru} letter={firstLetter.toLowerCase()}/>
+              return <Tag 
+                key={row.id} 
+                section={row.name_ru} 
+                letter={
+                  <div className="letter">
+                    {firstLetter.toLowerCase()}
+                  </div>}
+              />
           } else {
-              return <Tag key={row.id} section={row.name_ru}/>
+              return <Tag  
+                key={row.id} 
+                section={row.name_ru}
+                letter={null}
+              />
           }
         })}
-            
-      </>
+      </div>      
     );
 }
 

@@ -5,6 +5,8 @@ import React from "react";
 
 export const App = () => (
 
+
+
 <>
     <header></header>
     <section>
@@ -24,10 +26,8 @@ export const App = () => (
       <SearchArea />
 
       <div className="tagBox content">
-        <div className="alphabet" /* style={alphabetStyle} */>
           <TagList/>
-        </div>
-    </div>      
+      </div>      
   </section>
 </>
 

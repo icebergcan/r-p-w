@@ -1,26 +1,23 @@
 import React from "react";
 
-function Search ({
-      placeholder, 
-      buttonClass, 
-      buttonValue, 
-      buttonSrc,
-      inputType,
-      inputClass,
+import searchIcon from './assets/icons/searchIcon.svg'
+
+function Search ({ 
+      areaID,
+      searchTags,
+      sendTypedText
     }) 
 {
   return (
-      <>
-          <input id="fleaSearch" type={inputType} className={inputClass} placeholder={placeholder} />
+      <div className="searchArea">
+          <input placeholder="найти тег" className="search" id={areaID} />
           <input 
             type="button" 
-            src={buttonSrc} 
-            className={buttonClass} 
-            value={buttonValue} 
-            onClick={() => {
-              console.log(document.getElementById("fleaSearch").value)
-            }}/>
-      </>
+            src={searchIcon} 
+            className="searchButton" 
+            onClick={searchTags}
+          />
+      </div>
   );
 }
   export default Search

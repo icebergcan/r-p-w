@@ -1,35 +1,32 @@
 import React from "react";
-import searchIcon from './assets/icons/searchIcon.svg'
+
 import Search from "./search"
+import AddTag from "./addTag"
 
 
 function SearchArea  () {
 
+
+    // let searchValue = document.querySelector("#tagToDB").value;
+
+    function addTagToDB () {
+        console.log(document.getElementById("tagToDB").value)
+    }
+
+    function searchTagInDB () {
+        console.log(document.getElementById("searchInTags").value)
+    }
 
     return (
     <>
 
         <div className="searchBackground">
             <div className="searchBox content">
-                <div className="searchArea">
                     <Search
-                        inputClass="search"
-                        placeholder="найти тег"
-                        buttonClass="searchButton"
-                        buttonSrc={searchIcon}
+                        searchTags={searchTagInDB}
+                        areaID="searchInTags"
                      />
-                </div>
-                <div className="searchArea">
-                    <Search 
-                        inputType="text"
-                        inputClass="search"
-                    />
-                </div>
-                    <Search 
-                        inputType="button"
-                        buttonClass="plusTagButton"
-                        buttonValue="+ добавить тег"
-                    />
+                <AddTag />
             </div>
         </div>
        

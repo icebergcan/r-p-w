@@ -5,12 +5,18 @@ import searchIcon from './assets/icons/searchIcon.svg'
 function Search ({ 
       areaID,
       searchTags,
-      sendTypedText
+      handleChange
     }) 
 {
   return (
       <div className="searchArea">
-          <input placeholder="найти тег" className="search" id={areaID} />
+          <input 
+            type="text"
+            placeholder="найти тег" 
+            className="search" 
+            id={areaID} 
+            onChange={handleChange}
+          />
           <input 
             type="button" 
             src={searchIcon} 

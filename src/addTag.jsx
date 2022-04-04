@@ -8,7 +8,10 @@ function addTag ({
   return (
       <>
         <div className="searchArea">
-          <input className="search" id={areaID} />
+          <input 
+            type="text"
+            className="search" 
+            id={areaID} />
         </div>
           <input 
                     className="plusTagButton" 

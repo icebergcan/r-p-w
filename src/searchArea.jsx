@@ -17,6 +17,10 @@ function SearchArea  () {
         console.log(document.getElementById("searchInTags").value)
     }
 
+    function handleSearchInDB () {
+        console.log(document.getElementById("searchInTags").value)
+    }
+
     return (
     <>
 
@@ -25,8 +29,12 @@ function SearchArea  () {
                     <Search
                         searchTags={searchTagInDB}
                         areaID="searchInTags"
+                        handleChange={handleSearchInDB}
                      />
-                <AddTag />
+                <AddTag 
+                    areaID="tagToDB"
+                    addTag={addTagToDB}
+                />
             </div>
         </div>
        

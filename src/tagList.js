@@ -189,17 +189,11 @@ const rows =[
 
 function TagList () {
 
-  let alphabetStyle = {
-    gridTemplateRows: ""
-  }
-  
-  for (let i = 0; i < rows.length/4; i++) {
-    alphabetStyle.gridTemplateRows += " 1fr"
-  };
-
     let firstLetter = ''
     return (
-      <div className="alphabet" style={alphabetStyle}>
+      <div className="alphabet" style={
+        {gridTemplateRows: `repeat(${rows.length/4}, 1fr`}
+      }>
         {rows.map(row => {
           if (firstLetter !== row.name_ru[0]) {
             firstLetter = row.name_ru[0]

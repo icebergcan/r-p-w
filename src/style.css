@@ -8,46 +8,12 @@
   text-decoration: none;
 }
 
-header {
-  height: 52px;
-  background-color: #525252;
-}
-
-section {
-  width: 100%;
-  height: auto;
-}
-
 .content {
   margin: 0 auto;
   width: 56%;
   display: flex;
   justify-content: start;
   align-items: center;
-  /*   padding: 0 22%; */
-}
-
-.navigation {
-  background-color: #ededed;
-}
-
-.menu {
-  padding-right: 5px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  height: 52px;
-  font-size: 12px;
-}
-
-.menu p {
-  padding-right: 11px;
-  padding-left: 11px;
-}
-
-.menu img {
-  height: 15px;
-  width: 16px;
 }
 
 .title {
@@ -61,10 +27,6 @@ section {
   height: 52px;
   background-color: #ededed;
   display: flex;
-  align-content: center;
-}
-
-.searchBox {
   align-content: center;
 }
 
@@ -99,10 +61,6 @@ section {
   background-color: #ffffff;
   border: #ffffff 1px solid;
   border-radius: 3px;
-  font-size: 16px;
-}
-
-input::placeholder {
   font-size: 16px;
 }
 
@@ -188,8 +146,6 @@ input {
   right: -4px;
   top: -5px;
   cursor: pointer;
-
-  break-inside: avoid;
 }
 
 .listSection:hover .deleteTag {

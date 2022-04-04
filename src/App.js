@@ -8,19 +8,7 @@ export const App = () => (
 
 
 <>
-    <header></header>
     <section>
-      <div className="navigation">
-          <div className="content menu">
-              <img src={"assets/icons/home.png"} alt="" />
-              <p>/</p>
-              <a href="">Барахолка</a>
-              <p>/</p>
-              <a href="">Редактировать теги</a>
-          </div>
-      </div>
-
-
       <div className="content title">Редактировать теги</div>
 
       <SearchArea />
@@ -28,7 +16,7 @@ export const App = () => (
       <div className="tagBox content">
           <TagList/>
       </div>      
-  </section>
+    </section>
 </>
 
 );

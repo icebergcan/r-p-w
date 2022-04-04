@@ -25,7 +25,7 @@ function SearchArea  () {
     <>
 
         <div className="searchBackground">
-            <div className="searchBox content">
+            <div className="content">
                     <Search
                         searchTags={searchTagInDB}
                         areaID="searchInTags"
